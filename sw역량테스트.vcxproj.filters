@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\greed algorithm">
+      <UniqueIdentifier>{be29796c-5aa4-483b-8b31-a9a727b2f17a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\삼성기출">
+      <UniqueIdentifier>{92af9af0-3c62-440b-9834-daff5ac2bd0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\동빈나 강의">
+      <UniqueIdentifier>{bd8bb76c-0fc1-46ef-9c5d-04323f1b32be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\정렬 algorithm">
+      <UniqueIdentifier>{41250be8-612f-42fa-b1ce-158644978ba4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\SW Expert Academy">
+      <UniqueIdentifier>{df1b3a48-db61-434b-a725-c8d31bafc807}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="11399 atm.cpp">
+      <Filter>소스 파일\greed algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="5585 거스름돈.cpp">
+      <Filter>소스 파일\greed algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="14502 연구소.cpp">
+      <Filter>소스 파일\삼성기출</Filter>
+    </ClCompile>
+    <ClCompile Include="1969 DNA.cpp">
+      <Filter>소스 파일\greed algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="2강 선택정렬.cpp">
+      <Filter>소스 파일\동빈나 강의</Filter>
+    </ClCompile>
+    <ClCompile Include="3강 버블정렬.cpp">
+      <Filter>소스 파일\동빈나 강의</Filter>
+    </ClCompile>
+    <ClCompile Include="4강 삽입 정렬.cpp">
+      <Filter>소스 파일\동빈나 강의</Filter>
+    </ClCompile>
+    <ClCompile Include="5강,6강 퀵정렬.cpp">
+      <Filter>소스 파일\동빈나 강의</Filter>
+    </ClCompile>
+    <ClCompile Include="34강 그리디 알고리즘.cpp">
+      <Filter>소스 파일\동빈나 강의</Filter>
+    </ClCompile>
+    <ClCompile Include="1931 회의실배정.cpp">
+      <Filter>소스 파일\greed algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="7강 병합 정렬.cpp">
+      <Filter>소스 파일\동빈나 강의</Filter>
+    </ClCompile>
+    <ClCompile Include="9강 C++ STL sort()함수 다루기.cpp">
+      <Filter>소스 파일\동빈나 강의</Filter>
+    </ClCompile>
+    <ClCompile Include="10강 C++ STL sort()함수 다루기2.cpp">
+      <Filter>소스 파일\동빈나 강의</Filter>
+    </ClCompile>
+    <ClCompile Include="11강 힙 정렬.cpp">
+      <Filter>소스 파일\동빈나 강의</Filter>
+    </ClCompile>
+    <ClCompile Include="2752 세수정렬.cpp">
+      <Filter>소스 파일\정렬 algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="2751 수 정렬하기2(퀵 정렬).cpp">
+      <Filter>소스 파일\정렬 algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="2750 수 정렬하기.cpp">
+      <Filter>소스 파일\정렬 algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="11047 동전0.cpp">
+      <Filter>소스 파일\greed algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="2217 로프.cpp">
+      <Filter>소스 파일\greed algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="10610 30.cpp">
+      <Filter>소스 파일\greed algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="2875 대회 or 인턴.cpp">
+      <Filter>소스 파일\greed algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="1541 잃어버린 괄호.cpp">
+      <Filter>소스 파일\greed algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="1120 문자열.cpp">
+      <Filter>소스 파일\greed algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="1946 신입 사원.cpp">
+      <Filter>소스 파일\greed algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="1049 기타줄.cpp">
+      <Filter>소스 파일\greed algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="2529 부등호.cpp">
+      <Filter>소스 파일\greed algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="2529 부등호2.cpp">
+      <Filter>소스 파일\greed algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="vector.cpp">
+      <Filter>소스 파일\greed algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon_1080.cpp">
+      <Filter>소스 파일\greed algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon_2352.cpp">
+      <Filter>소스 파일\greed algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon_1138.cpp">
+      <Filter>소스 파일\greed algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon_1783.cpp">
+      <Filter>소스 파일\greed algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="Baekjoon_2437.cpp">
+      <Filter>소스 파일\greed algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="SWEA gravity.cpp">
+      <Filter>소스 파일\SW Expert Academy</Filter>
+    </ClCompile>
+    <ClCompile Include="Baby-Gin.cpp">
+      <Filter>소스 파일\SW Expert Academy</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
