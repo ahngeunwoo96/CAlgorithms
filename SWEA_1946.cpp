@@ -1,4 +1,4 @@
-// sw 1946 °£´ÜÇÑ ¾ÐÃà Ç®±â
+// sw 1946 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Ç®ï¿½ï¿½
 
 #include <iostream> 
 
@@ -7,6 +7,7 @@ using namespace std;
 int main() {
 	int T;
 	cin >> T;
+
 
 	for (int test = 0; test < T; test++) {
 		int N, *cnt;
