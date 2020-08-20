@@ -4,29 +4,28 @@
 
 using namespace std;
 
-int Answer;
+long long int Answer;
 
 int main () {
     int T;
     cin >> T;
 
     for(int tc = 1; tc <= T; tc++) {
-        Answer = 0;
+        Answer = 1;
         int n, m;
         cin >> n >> m;
 
-        for(int a = 0; a <= n; a++)
-            for(int b = 0; b <= m; b++){
-                int Sum = 1;
-                for(int i = b + 1; i <= a + b ; i++) {
-                    Sum *= i;
-                }
-                
-                for(int i = 1; i <= a; i++) {
-                    Sum /= i;
-                }
-                Answer += Sum;
-            }
+        
+
+        for(int i =  m + 2; i <= m + n + 2; i++) {
+            Answer *= i;
+        }
+
+        for(int i = 1; i <= n + 1; i++) {
+            Answer /= i;
+        }
+
+        Answer -= 1;
 
         cout << "Case #" << tc << "\n" << Answer % 1000000007 << endl;
 
