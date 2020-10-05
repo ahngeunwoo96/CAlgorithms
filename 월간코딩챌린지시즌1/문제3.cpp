@@ -47,18 +47,16 @@ int solution(vector<int> a) {
 int main() {
     vector <int> a;
 
-    a.push_back(<int>(-16, 27, 65, -2, 58, -92, -71, -68, -61, -33));
-
-    // a.push_back(-16);
-    // a.push_back(27);
-    // a.push_back(65);
-    // a.push_back(-2);
-    // a.push_back(58);
-    // a.push_back(-92);
-    // a.push_back(-71);
-    // a.push_back(-68);
-    // a.push_back(-61);
-    // a.push_back(-33);
+    a.push_back(-16);
+    a.push_back(27);
+    a.push_back(65);
+    a.push_back(-2);
+    a.push_back(58);
+    a.push_back(-92);
+    a.push_back(-71);
+    a.push_back(-68);
+    a.push_back(-61);
+    a.push_back(-33);
 
 
     int answer = solution(a);
@@ -72,42 +70,3 @@ int main() {
 
     return 0;
 }
-
-// 66.7점 받음,,방법을 변경해야 함!! 
-
-// #include <iostream>
-// #include <vector>
-// #include <string>
-
-// using namespace std;
-// vector <int> answer_a;
-
-// int solution(vector<int> a) {
-//     int answer = 0;
-
-//     answer = 2;
-//     int left_is_small = false, right_is_small = false;
-
-//     for(int i = 1; i < a.size() - 1; i++) {
-//         left_is_small = false, right_is_small = false;
-//         for(int j = 0; j < i; j++) { 
-//             if(a[j] < a[i]) {
-//                 left_is_small = true;
-//                 break;
-//             }
-//         }
-
-//         for(int k = i + 1; k < a.size(); k++) {
-//             if(a[k] < a[i]) {
-//                 right_is_small = true;
-//                 break;
-//             }
-//         }
-
-//         if(left_is_small == false || right_is_small == false)
-//             answer += 1;
-            
-//     }
-
-//     return answer;
-// }
