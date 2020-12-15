@@ -1,76 +1,31 @@
 // SWEA 1244 2일차 - 최대상금 
 #include <iostream>
+#include <string.h>
 #include <algorithm>
 
 using namespace std;
 
-int saveNumber(int num, int number[], int sorted_number[], int cnt) {
+int answer, n; 
 
-	if(num / 100000 != 0) {
-		number[0] = num / 100000;
-		sorted_number[0] = number[0];
-		num = num % 100000;
-		cnt++;
-	}
-	
-	if(num / 10000 != 0) {
-		number[1] = num / 10000;
-		sorted_number[1] = number[1];
-		num = num % 10000;
-		cnt++;
+void findBigNumber_DFS(int cnt, string num, int start) {
+	if(cnt == n) {
+		int temp = stoi(num);
+		if(temp > answer) answer = temp;
+		return;
 	}
 
-	if(num / 1000 != 0) {
-		number[2] = num / 1000;
-		sorted_number[2] = number[2];
-		num = num % 1000;
-		cnt++;
-	}
-
-	if(num / 100 != 0) {
-		number[3] = num / 100;
-		sorted_number[3] = number[3];
-		num = num % 100;
-		cnt++;
-	}
-
-	if(num / 10 != 0) {
-		number[4] = num / 10;
-		sorted_number[4] = number[4];
-		num = num % 10;
-		cnt++;
-	}
-
-	if(num % 10 != 0) {
-		number[5] = num % 10;
-		sorted_number[5] = number[5];
-		cnt++;
-	}
-
-	return cnt;
-	
-}
-
-void sortnFindPos(int number[], int sorted_number[], int cnt, int pos[]) {
-	int max = 0, pos_cnt = 0, max_pos = 0;
-	// number = 8,8,8,5,3,2
-	while(pos_cnt != 6) {
-		max = 0;
-		for(int i = 0; i <= cnt; i++) {
-			if(number[i] > max && pos[i] == 0) {
-				max = number[i];
-				max_pos = i;
-			}
+	for(int i = start; i < num.size() - 1; i++) {
+		for(int j = i + 1; j < num.size(); j++) {
+			char temp = num[i];
+			num[i] = num[j];
+			num[j] = temp;
+			findBigNumber_DFS(cnt + 1, num, i);
+			temp = num[j];
+			num[j] = num[i];
+			num[i] = temp;
 		}
-		pos[max_pos] = ++pos_cnt;
-	}
-
-	for(int i = 0; i < cnt; i++) {
-		sorted_number[pos[i] - 1] = number[i];
 	}
 }
-
-
 
 int main(int argc, char** argv)
 {
@@ -87,32 +42,22 @@ int main(int argc, char** argv)
 	   실 때에는 반드시 freopen 함수를 지우거나 주석 처리 하셔야 합니다.
 	*/
 	//freopen("input.txt", "r", stdin);
-	//cin>>T;
+	cin>>T;
 	/*
 	   여러 개의 테스트 케이스가 주어지므로, 각각을 처리합니다.
 	*/
 
-	T = 1;
+	for(test_case = 1; test_case <= T; ++test_case){
+		answer = 0;
+		string num;
 
-	for(test_case = 1; test_case <= T; ++test_case)
-	{
-        int num, cnt = 0, change_cnt, answer = 0;
-        //cin >> num >> change_cnt;
+		cin >> num >> n;
 
-		num = 238588;
-		change_cnt = 2;
-        int number[6] = {0}, sorted_number[6] = {0}, pos[6] = {0};
+		if(n > num.size()) n = num.size();
 
-        // number배열에 입력받은 숫자를 첫째자리부터 저장
-        cnt = saveNumber(num, number, sorted_number, cnt);
+		findBigNumber_DFS(0, num, 0);
 
-		sortnFindPos(number, sorted_number, cnt, pos);
-
-        for(int i = 0; i < change_cnt; i++) {
-			
-        }
-
-		cout << "#" << test_case << endl;
+		cout << "#" << test_case << " " << answer << endl;
 
 	}
 	
