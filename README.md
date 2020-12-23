@@ -1,7 +1,14 @@
-# Coding_Test
+# 코딩테스트 준비
 
-## 코딩테스트 준비
+### 개발언어
+- c++
 
-### 개발 환경
-c++, visual studio 2017
+### 개발환경
+- Visual Studio Code 
 
+### 참고한 사이트 
+- SW Expert Academy :  https://swexpertacademy.com/main/main.do
+- 프로그래머스 : https://programmers.co.kr
+- 백준 : https://www.acmicpc.net
+- 애듀케스트 케빈 알고리즘 강의 : https://educast.com/course/computer-science/CG58
+- 동빈나 강의 : https://www.youtube.com/channel/UChflhu32f5EUHlY7_SetNWw
