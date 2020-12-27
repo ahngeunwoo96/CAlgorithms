@@ -1,7 +1,7 @@
 // sw 1288 ���ο� �Ҹ��� ġ���
 
 #include <iostream> 
-#include <string>
+#include <string.h>
 
 using namespace std;
 int numCheck[10];
@@ -13,7 +13,7 @@ void Sheep(int num, int x) {
 	string number = to_string(num * x);
 
 	for(int i = 0; i < number.size(); i++) {
-		numCheck[number[i]] = 1;
+		numCheck[(int)number[i] - 48] = 1;
 	}
 
 	allNumber = true;
@@ -44,6 +44,8 @@ int main() {
 		}
 
 		Sheep(num, 1);
-	}
+
+		cout << "#" << test_case << " " << answer << endl;
+ 	}
 	return 0;
 }
