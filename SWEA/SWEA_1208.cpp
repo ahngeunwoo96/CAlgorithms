@@ -11,7 +11,7 @@ int main() {
         int dump_num;
         cin >> dump_num;
 
-        int box_height[100] = {0 };
+        int box_height[100] = {0};
 
         for(int i = 0; i < 100; i++) {
             cin >> box_height[i];
@@ -32,6 +32,7 @@ int main() {
             box_height[0] = box_height[1];
             box_height[1] += 1;
         } 
+        sort(box_height, box_height + 100);
         }
 
         cout << "#" << " " << box_height[99] - box_height[0] << endl;
