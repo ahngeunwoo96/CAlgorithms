@@ -1,35 +1,49 @@
-// sw 1288 »õ·Î¿î ºÒ¸éÁõ Ä¡·á¹ý
+// sw 1288 ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½Ò¸ï¿½ï¿½ï¿½ Ä¡ï¿½ï¿½ï¿½
 
 #include <iostream> 
+#include <string>
 
 using namespace std;
+int numCheck[10];
+bool allNumber = true;
+int answer;
+
+void Sheep(int num, int x) {
+
+	string number = to_string(num * x);
+
+	for(int i = 0; i < number.size(); i++) {
+		numCheck[number[i]] = 1;
+	}
+
+	allNumber = true;
+	for(int i = 0; i < 10; i++) {
+		if(numCheck[i] == 0)
+			allNumber = false;
+	}
+
+	if(allNumber == true) {
+		answer = x * num;
+		return;
+	}
+	
+	Sheep(num, x + 1);
+}
 
 int main() {
 	int T;
 	cin >> T;
 
 	for (int test_case = 1; test_case <= T; test_case++) {
-		int N;
-		cin >> N;
-		int number[10];
-		int i = 1;
+		answer = 0;
+		int num;
+		cin >> num;
 
-		while (number[0] != 0 && number[1] != 0 && number[2] != 0 && number[3] != 0 && number[4] != 0 && number[5] != 0 &&
-			number[6] != 0 && number[7] != 0 && number[8] != 0 && number[9] != 0) {
-
-			int kN = i * N;
-
-			while (kN >= 10) {
-				number[kN % 10] = 1;
-				kN = kN / 10;
-			}
-
-			number[kN] = 1;
-			i += 1;
-
+		for(int i = 0; i < 10; i++) {
+			numCheck[i] = 0;
 		}
 
-		cout << "#" << test_case << " " << i;
+		Sheep(num, 1);
 	}
 	return 0;
 }
