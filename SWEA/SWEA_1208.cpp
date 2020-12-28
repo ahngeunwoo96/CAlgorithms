@@ -35,7 +35,7 @@ int main() {
         sort(box_height, box_height + 100);
         }
 
-        cout << "#" << " " << box_height[99] - box_height[0] << endl;
+        cout << "#" << tc << " " << box_height[99] - box_height[0] << endl;
         
   }
 
