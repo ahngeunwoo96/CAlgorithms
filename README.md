@@ -1,12 +1,12 @@
-# 코딩테스트 준비
+## Codingtest
 
 ### 개발언어
-- c++
+>  c++
 
 ### 개발환경
-- Visual Studio Code 
+> Visual Studio Code 
 
-### 참고한 사이트 
+### 참고
 - SW Expert Academy :  https://swexpertacademy.com/main/main.do
 - 프로그래머스 : https://programmers.co.kr
 - 백준 : https://www.acmicpc.net
