@@ -145,4 +145,10 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
 # End of https://www.toptal.com/developers/gitignore/api/macos,visualstudiocode,windows,c++,c
