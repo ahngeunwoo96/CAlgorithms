@@ -12,7 +12,7 @@ int main() {
 	for (int tc = 1; tc <= 10; tc++) {
 		cin >> tc;
 		int ans = 0;
-p
+
 		for(int y = 0; y < 100; y++) 
 			for (int x = 0; x < 100; x++) {
 				cin >> input[y][x];
